@@ -1,0 +1,103 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#333;
+padding:15px 60px;
+color:white;
+}
+
+.navbar ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+}
+
+/* Home */
+
+.home{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#f4f4f4;
+text-align:center;
+}
+
+.home h1{
+font-size:45px;
+}
+
+.home button{
+padding:10px 20px;
+background:orange;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+/* Services */
+
+.services{
+padding:60px;
+text-align:center;
+}
+
+.service-container{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.service-box{
+border:1px solid #ddd;
+padding:20px;
+width:200px;
+}
+
+/* About */
+
+.about{
+padding:60px;
+background:#f4f4f4;
+text-align:center;
+}
+
+/* Contact */
+
+.contact{
+padding:60px;
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.contact input,
+.contact textarea{
+width:300px;
+padding:10px;
+}
+
+/* Footer */
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+}
