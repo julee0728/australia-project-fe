@@ -76,7 +76,7 @@ const Services = ({ onServiceSelect }) => {
                                 <div className={`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 ${colors.bg} ${colors.text} shadow-inner ring-8 ring-white/50`}>
                                     {React.cloneElement(service.icon, { className: "w-8 h-8" })}
                                 </div>
-                                <h3 className="text-2xl font-black text-[#1a2b3c] uppercase tracking-tight">{service.title}</h3>
+                                <h3 className="text-lg font-black text-[#1a2b3c] uppercase tracking-tight">{service.title}</h3>
                             </div>
 
                             <div className="flex-1 text-center relative z-10 mb-6">
