@@ -36,7 +36,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => scrollToSection("home")}
-                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "home" ? "border-b-2 border-white" : ""
+                        className={`font-black capitalize tracking-widest pb-1 ${activeLink === "home" ? "border-b-2 border-white" : ""
                             }`}
                     >
                         Home
@@ -44,7 +44,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => scrollToSection("services")}
-                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "services" ? "border-b-2 border-white" : ""
+                        className={`font-black capitalize tracking-widest pb-1 ${activeLink === "services" ? "border-b-2 border-white" : ""
                             }`}
                     >
                         Services
@@ -52,7 +52,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => scrollToSection("about")}
-                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "about" ? "border-b-2 border-white" : ""
+                        className={`font-black capitalize tracking-widest pb-1 ${activeLink === "about" ? "border-b-2 border-white" : ""
                             }`}
                     >
                         About
@@ -60,7 +60,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => scrollToSection("contact")}
-                        className="bg-[#3174c8] px-6 py-2 rounded-full font-black uppercase text-[16px] hover:bg-[#2860a8] transition-all"
+                        className="bg-[#3174c8] px-6 py-2 rounded-full font-black capitalize text-[16px] hover:bg-[#2860a8] transition-all"
                     >
                         Contact
                     </button>
