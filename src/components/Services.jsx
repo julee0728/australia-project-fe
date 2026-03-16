@@ -54,9 +54,9 @@ const Services = ({ onServiceSelect }) => {
     };
 
     return (
-        <section id="services" className="w-full max-w-7xl mx-auto px-8 py-20 bg-white">
-            <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-black text-[#2e425a] mb-4 uppercase tracking-tighter">Our <span className="text-[#3174c8]">Premium</span> Services</h2>
+        <section id="services" className="w-full max-w-7xl mx-auto px-8 py-16 bg-white">
+            <div className="text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-black text-[#2e425a] mb-3 uppercase tracking-tighter">Our <span className="text-[#3174c8]">Premium</span> Services</h2>
                 <p className="text-lg text-gray-500 max-w-2xl mx-auto font-medium">Expert professionals ready to help fix, build, and improve your home today.</p>
                 <div className="w-24 h-2 bg-[#3174c8] mx-auto mt-6 rounded-full"></div>
             </div>
@@ -67,19 +67,19 @@ const Services = ({ onServiceSelect }) => {
                     return (
                         <div
                             key={index}
-                            className={`group flex flex-col bg-white rounded-[32px] p-8 md:p-10 border-2 ${colors.border} shadow-sm hover:shadow-2xl ${colors.shadow} transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden`}
+                            className={`group flex flex-col bg-white rounded-[28px] p-7 md:p-8 border-2 ${colors.border} shadow-sm hover:shadow-2xl ${colors.shadow} transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden`}
                         >
                             {/* Decorative background circle on hover */}
                             <div className={`absolute -right-20 -top-20 w-48 h-48 rounded-full ${colors.bg} opacity-0 group-hover:opacity-60 transition-all duration-700 scale-0 group-hover:scale-100 bg-red-500`}></div>
 
-                            <div className="flex flex-col items-center gap-6 mb-8 relative z-10">
-                                <div className={`w-20 h-20 rounded-2xl flex items-center justify-center shrink-0 ${colors.bg} ${colors.text} shadow-inner ring-8 ring-white/50`}>
-                                    {service.icon}
+                            <div className="flex flex-col items-center gap-5 mb-6 relative z-10">
+                                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 ${colors.bg} ${colors.text} shadow-inner ring-8 ring-white/50`}>
+                                    {React.cloneElement(service.icon, { className: "w-8 h-8" })}
                                 </div>
                                 <h3 className="text-2xl font-black text-[#1a2b3c] uppercase tracking-tight">{service.title}</h3>
                             </div>
 
-                            <div className="flex-1 text-center relative z-10 mb-8">
+                            <div className="flex-1 text-center relative z-10 mb-6">
                                 <p className="text-[16px] text-gray-500 leading-relaxed font-semibold">
                                     {service.desc}
                                 </p>
@@ -88,10 +88,10 @@ const Services = ({ onServiceSelect }) => {
                             <div className="mt-auto relative z-10">
                                 <button
                                     onClick={() => handleServiceClick(service)}
-                                    className={`w-full py-4 px-6 rounded-2xl font-black uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 group-hover:bg-[#3174c8] group-hover:text-white border-2 border-[#3174c8] text-[#3174c8] shadow-lg group-hover:shadow-blue-500/20 active:scale-95`}
+                                    className={`w-full py-4 px-6 rounded-xl font-black uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 group-hover:bg-[#3174c8] group-hover:text-white border-2 border-[#3174c8] text-[#3174c8] shadow-lg group-hover:shadow-blue-500/20 active:scale-95 text-sm`}
                                 >
                                     View Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transform group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                     </svg>
                                 </button>

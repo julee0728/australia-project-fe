@@ -11,48 +11,48 @@ const ContactSection = () => {
                     <div className="space-y-4">
                         <h2 className="text-4xl lg:text-5xl font-extrabold text-[#233549]">Get In <span className="text-[#3174c8]">Touch</span></h2>
                         <p className="text-lg text-gray-500 font-medium leading-relaxed">
-                            Have a project in mind? Or need a quick repair? Send us a message and our team will get back to you within 2 hours.
+                            Have a project in mind? Or need a quick repair? Send us a message today.
                         </p>
                     </div>
 
-                    <div className="space-y-6">
-                        <div className="flex items-start gap-5 group">
-                            <div className="bg-blue-50 p-4 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
-                                <Phone className="text-[#3174c8] group-hover:text-white" />
+                    <div className="space-y-5">
+                        <div className="flex items-start gap-4 group">
+                            <div className="bg-blue-50 p-3.5 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
+                                <Phone className="text-[#3174c8] group-hover:text-white w-5 h-5" />
                             </div>
                             <div>
-                                <h4 className="text-xl font-bold text-[#233549]">Call Us Fast</h4>
-                                <p className="text-gray-500 font-semibold">+61 123 456-789</p>
+                                <h4 className="text-lg font-bold text-[#233549]">Call Us Fast</h4>
+                                <p className="text-gray-500 font-semibold text-sm">+61 123 456-789</p>
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-5 group">
-                            <div className="bg-blue-50 p-4 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
-                                <Mail className="text-[#3174c8] group-hover:text-white" />
+                        <div className="flex items-start gap-4 group">
+                            <div className="bg-blue-50 p-3.5 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
+                                <Mail className="text-[#3174c8] group-hover:text-white w-5 h-5" />
                             </div>
                             <div>
-                                <h4 className="text-xl font-bold text-[#233549]">Email Support</h4>
-                                <p className="text-gray-500 font-semibold">info@homeservices.com</p>
+                                <h4 className="text-lg font-bold text-[#233549]">Email Support</h4>
+                                <p className="text-gray-500 font-semibold text-sm">info@homeservices.com</p>
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-5 group">
-                            <div className="bg-blue-50 p-4 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
-                                <MapPin className="text-[#3174c8] group-hover:text-white" />
+                        <div className="flex items-start gap-4 group">
+                            <div className="bg-blue-50 p-3.5 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
+                                <MapPin className="text-[#3174c8] group-hover:text-white w-5 h-5" />
                             </div>
                             <div>
-                                <h4 className="text-xl font-bold text-[#233549]">Office Address</h4>
-                                <p className="text-gray-500 font-semibold">123 Business St, Sydney, Australia</p>
+                                <h4 className="text-lg font-bold text-[#233549]">Office Address</h4>
+                                <p className="text-gray-500 font-semibold text-sm">123 Business St, Sydney, Australia</p>
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-5 group">
-                            <div className="bg-blue-50 p-4 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
-                                <Clock className="text-[#3174c8] group-hover:text-white" />
+                        <div className="flex items-start gap-4 group">
+                            <div className="bg-blue-50 p-3.5 rounded-2xl group-hover:bg-[#3174c8] transition-colors duration-300">
+                                <Clock className="text-[#3174c8] group-hover:text-white w-5 h-5" />
                             </div>
                             <div>
-                                <h4 className="text-xl font-bold text-[#233549]">Working Hours</h4>
-                                <p className="text-gray-500 font-semibold">Mon - Sat: 8AM - 8PM</p>
+                                <h4 className="text-lg font-bold text-[#233549]">Working Hours</h4>
+                                <p className="text-gray-500 font-semibold text-sm">Mon - Sat: 8AM - 8PM</p>
                             </div>
                         </div>
                     </div>
@@ -108,10 +108,10 @@ const ContactSection = () => {
 
                             <button
                                 type="submit"
-                                className="w-full md:w-auto bg-[#3174c8] hover:bg-[#2860a8] text-white font-bold uppercase tracking-widest px-12 py-5 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-3"
+                                className="w-full md:w-auto bg-[#3174c8] hover:bg-[#2860a8] text-white font-bold uppercase tracking-widest px-10 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2.5 text-sm"
                             >
                                 Send Message
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                                 </svg>
                             </button>

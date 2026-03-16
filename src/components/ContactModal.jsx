@@ -22,9 +22,9 @@ const ContactModal = ({ isOpen, onClose }) => {
                     </svg>
                 </button>
 
-                <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold text-[#233549] mb-3">Contact Us</h2>
-                    <p className="text-gray-500 text-[15px]">Need help with home services? Contact our team anytime.</p>
+                <div className="text-center mb-6">
+                    <h2 className="text-2xl font-bold text-[#233549] mb-2">Contact Us</h2>
+                    <p className="text-gray-500 text-[14px]">Need help with home services? Contact our team anytime.</p>
                 </div>
 
                 <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert('Message Sent!'); onClose(); }}>
@@ -63,7 +63,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 
                     <button
                         type="submit"
-                        className="w-full bg-[#3b6bb4] hover:bg-[#2e5591] text-white font-medium py-3.5 rounded-xl shadow-md transition-colors text-[16px] mt-4"
+                        className="w-full bg-[#3b6bb4] hover:bg-[#2e5591] text-white font-medium py-3 rounded-xl shadow-md transition-colors text-[14px] mt-4"
                     >
                         Send Message
                     </button>

@@ -20,7 +20,7 @@ const Navbar = () => {
         <>
             {/* Navbar */}
 
-            <nav className="bg-[#2a3c56] text-white px-8 md:px-20 py-6 flex items-center justify-between sticky top-0 z-50 shadow-lg">
+            <nav className="bg-[#2a3c56] text-white px-8 md:px-20 py-5 flex items-center justify-between sticky top-0 z-50 shadow-lg">
 
                 {/* Logo */}
                 <h1
@@ -32,11 +32,11 @@ const Navbar = () => {
 
                 {/* Desktop Nav */}
 
-                <div className="hidden md:flex items-center space-x-16 text-[18px]">
+                <div className="hidden md:flex items-center space-x-12 text-[18px]">
 
                     <button
                         onClick={() => scrollToSection("home")}
-                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "home" ? "border-b-4 border-[#5c85ba]" : ""
+                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "home" ? "border-b-2 border-white" : ""
                             }`}
                     >
                         Home
@@ -44,7 +44,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => scrollToSection("services")}
-                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "services" ? "border-b-4 border-[#5c85ba]" : ""
+                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "services" ? "border-b-2 border-white" : ""
                             }`}
                     >
                         Services
@@ -52,7 +52,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => scrollToSection("about")}
-                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "about" ? "border-b-4 border-[#5c85ba]" : ""
+                        className={`font-black uppercase tracking-widest pb-1 ${activeLink === "about" ? "border-b-2 border-white" : ""
                             }`}
                     >
                         About
@@ -60,7 +60,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => scrollToSection("contact")}
-                        className="bg-[#3174c8] px-6 py-2 rounded-full font-black uppercase"
+                        className="bg-[#3174c8] px-6 py-2 rounded-full font-black uppercase text-[16px] hover:bg-[#2860a8] transition-all"
                     >
                         Contact
                     </button>
@@ -103,7 +103,7 @@ const Navbar = () => {
 
                     {/* Sidebar Links */}
 
-                    <div className="flex flex-col space-y-6 text-lg font-bold text-[#2a3c56]">
+                    <div className="flex flex-col space-y-5 text-base font-bold text-[#2a3c56]">
 
                         <button
                             onClick={() => scrollToSection("home")}
@@ -128,7 +128,7 @@ const Navbar = () => {
 
                         <button
                             onClick={() => scrollToSection("contact")}
-                            className="bg-[#3174c8] text-white px-5 py-3 rounded-xl"
+                            className="bg-[#3174c8] text-white px-4 py-2.5 rounded-xl text-center"
                         >
                             Contact
                         </button>

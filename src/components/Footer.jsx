@@ -10,10 +10,10 @@ const Footer = ({ onContactClick }) => {
 
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <h2 className="text-[28px] font-black tracking-tight">
+                        <h2 className="text-[24px] font-black tracking-tight">
                             Home<span className="text-[#3174c8]">Services</span>
                         </h2>
-                        <p className="text-gray-400 text-sm font-medium leading-relaxed">
+                        <p className="text-gray-400 text-[13px] font-medium leading-relaxed">
                             Australia's leading platform for finding skilled, trusted, and professional home service experts. Quality work is our signature.
                         </p>
                         <div className="flex gap-4">
@@ -27,7 +27,7 @@ const Footer = ({ onContactClick }) => {
 
                     {/* Quick Explore */}
                     <div className="space-y-6 lg:ml-8">
-                        <h4 className="text-lg font-bold text-white uppercase tracking-widest border-b-2 border-[#3174c8] inline-block pb-1">Explore</h4>
+                        <h4 className="text-base font-bold text-white uppercase tracking-widest border-b-2 border-[#3174c8] inline-block pb-1">Explore</h4>
                         <ul className="space-y-4">
                             {['Home', 'Services', 'About', 'Contact'].map((item) => (
                                 <li key={item}>
@@ -42,7 +42,7 @@ const Footer = ({ onContactClick }) => {
 
                     {/* Services Column */}
                     <div className="space-y-6">
-                        <h4 className="text-lg font-bold text-white uppercase tracking-widest border-b-2 border-[#3174c8] inline-block pb-1">Our Services</h4>
+                        <h4 className="text-base font-bold text-white uppercase tracking-widest border-b-2 border-[#3174c8] inline-block pb-1">Our Services</h4>
                         <ul className="space-y-4">
                             {['Carpenter', 'Electrician', 'Plumber', 'Cleaning', 'Painting'].map((item) => (
                                 <li key={item} className="text-gray-400 hover:text-white cursor-pointer transition-all font-bold uppercase tracking-tight text-sm">
@@ -54,7 +54,7 @@ const Footer = ({ onContactClick }) => {
 
                     {/* Location/Map Column */}
                     <div className="space-y-6">
-                        <h4 className="text-lg font-bold text-white uppercase tracking-widest border-b-2 border-[#3174c8] inline-block pb-1">Head Office</h4>
+                        <h4 className="text-base font-bold text-white uppercase tracking-widest border-b-2 border-[#3174c8] inline-block pb-1">Head Office</h4>
                         <div className="relative rounded-2xl overflow-hidden group shadow-2xl border-2 border-white/5">
                             <img
                                 src="/map.png"
