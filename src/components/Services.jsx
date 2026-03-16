@@ -56,7 +56,7 @@ const Services = ({ onServiceSelect }) => {
     return (
         <section id="services" className="w-full max-w-7xl mx-auto px-8 py-16 bg-white">
             <div className="text-center mb-12">
-                <h2 className="text-4xl md:text-5xl font-black text-[#2e425a] mb-3 capitalize tracking-tighter">Our <span className="text-[#3174c8]">Premium</span> Services</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-[#2e425a] mb-3  capitalize tracking-tighter">Our <span className="text-[#3174c8]">Premium</span> Services</h2>
                 <p className="text-lg text-gray-500 max-w-2xl mx-auto font-medium">Expert professionals ready to help fix, build, and improve your home today.</p>
                 <div className="w-24 h-2 bg-[#3174c8] mx-auto mt-6 rounded-full"></div>
             </div>
