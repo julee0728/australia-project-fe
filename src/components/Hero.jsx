@@ -16,7 +16,7 @@ const Hero = ({ onContactClick }) => {
                 {/* Content */}
                 <div className="md:w-2/3 lg:w-1/2 space-y-5 pr-4">
                     <h2 className="text-[44px] lg:text-[54px] font-bold text-[#2e425a] leading-[1.1] tracking-tight opacity-0 animate-fade-up">
-                        Find Trusted Home<br className="hidden lg:block" /> Services Near You
+                        Australia's Most Trusted<br className="hidden lg:block" /> Home Service Experts
                     </h2>
                     <p className="text-[19px] text-[#55677d] pr-10 leading-relaxed font-semibold opacity-0 animate-fade-up animation-delay-200">
                         Book Professional Carpenter, Electrician,<br className="hidden md:block" /> Plumber, Cleaning and Painting Experts<br className="hidden md:block" /> for Your Home

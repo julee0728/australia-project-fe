@@ -46,6 +46,20 @@ const AboutSection = () => {
                             <span className="text-sm font-bold text-gray-500 uppercase tracking-widest">Expert Workers</span>
                         </div>
                     </div>
+
+                    <div className="mt-8 p-6 bg-white rounded-2xl border border-blue-100 shadow-[0_10px_40px_-15px_rgba(49,116,200,0.1)] flex items-center gap-5 w-fit animate-fade-up opacity-0 animation-delay-500" style={{ animationFillMode: 'forwards' }}>
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-[#3174c8]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span className="block text-[11px] font-bold text-[#3174c8] uppercase tracking-[0.2em] mb-1">Working Hours</span>
+                            <span className="block text-lg md:text-xl font-extrabold text-[#2e425a]">
+                                Mon - Fri : <span className="text-[#3174c8]">9am - 5pm</span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Right Side Image - Hero Image reused as requested */}
