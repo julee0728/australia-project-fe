@@ -55,8 +55,8 @@ const testimonials = [
 
 const FeedbackSection = () => {
     return (
-        <section id="feedback" className="py-24 bg-white overflow-hidden">
-            <div className="container mx-auto px-8 md:px-20 text-center mb-16">
+        <section id="feedback" className="py-12 bg-white overflow-hidden">
+            <div className="container mx-auto px-8 md:px-20 text-center mb-10">
                 <span className="text-[#3174c8] font-bold tracking-widest uppercase text-sm">Testimonials</span>
                 <h2 className="text-4xl md:text-5xl font-black text-[#2a3c56] mt-4">
                     What Our <span className="text-[#3174c8]">Clients Say</span>
@@ -68,7 +68,7 @@ const FeedbackSection = () => {
 
             <div className="relative flex overflow-x-hidden group">
                 {/* First set of marquee items */}
-                <div className="animate-marquee whitespace-nowrap py-12 flex">
+                <div className="animate-marquee whitespace-nowrap py-6 flex">
                     {testimonials.map((item, index) => (
                         <div key={index} className="w-[400px] bg-[#f8faff] p-8 rounded-3xl mx-4 shadow-sm border border-gray-100 transition-all hover:shadow-xl hover:-translate-y-2 flex flex-col">
                             <div className="flex items-center gap-4 mb-6">
@@ -94,7 +94,7 @@ const FeedbackSection = () => {
                 </div>
 
                 {/* Duplicate set for seamless looping */}
-                <div className="animate-marquee whitespace-nowrap py-12 flex" aria-hidden="true">
+                <div className="animate-marquee whitespace-nowrap py-6 flex" aria-hidden="true">
                     {testimonials.map((item, index) => (
                         <div key={`dup-${index}`} className="w-[400px] bg-[#f8faff] p-8 rounded-3xl mx-4 shadow-sm border border-gray-100 transition-all hover:shadow-xl hover:-translate-y-2 flex flex-col">
                             <div className="flex items-center gap-4 mb-6">
