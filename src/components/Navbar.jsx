@@ -59,6 +59,14 @@ const Navbar = () => {
                     </button>
 
                     <button
+                        onClick={() => scrollToSection("feedback")}
+                        className={`font-black capitalize tracking-widest pb-1 ${activeLink === "feedback" ? "border-b-2 border-white" : ""
+                            }`}
+                    >
+                        Feedback
+                    </button>
+
+                    <button
                         onClick={() => scrollToSection("contact")}
                         className="bg-[#3174c8] px-6 py-2 rounded-full font-black capitalize text-[16px] hover:bg-[#2860a8] transition-all"
                     >
@@ -124,6 +132,13 @@ const Navbar = () => {
                             className="text-left hover:text-[#3174c8]"
                         >
                             About
+                        </button>
+
+                        <button
+                            onClick={() => scrollToSection("feedback")}
+                            className="text-left hover:text-[#3174c8]"
+                        >
+                            Feedback
                         </button>
 
                         <button

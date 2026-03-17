@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import AboutSection from './components/AboutSection';
+import FeedbackSection from './components/FeedbackSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
@@ -42,6 +43,11 @@ function App() {
       {/* About */}
       <div id="about">
         <AboutSection />
+      </div>
+
+      {/* Feedback */}
+      <div id="feedback">
+        <FeedbackSection />
       </div>
 
       {/* Contact */}
