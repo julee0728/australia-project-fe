@@ -25,9 +25,9 @@ const Navbar = () => {
                 {/* Logo */}
                 <h1
                     onClick={() => scrollToSection("home")}
-                    className="text-[30px] font-black cursor-pointer"
+                    className="text-[20px] font-black cursor-pointer"
                 >
-                    Home <span className="text-white">Services</span>
+                    Home Services
                 </h1>
 
                 {/* Desktop Nav */}

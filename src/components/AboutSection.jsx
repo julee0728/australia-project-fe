@@ -14,7 +14,7 @@ const AboutSection = () => {
                         We Are Australia's Most Trusted <span className="text-[#3174c8]">Home Service</span> Experts
                     </h2>
                     <p className="text-[19px] text-[#55677d] leading-relaxed font-medium">
-                        With over 15 years of experience, we provide high-quality building and repair services across Australia. From minor leaks to major renovations.
+                        With over 1 years of experience, we provide high-quality building and repair services across Australia. From minor leaks to major renovations.
                     </p>
 
                     <ul className="space-y-3">
@@ -37,12 +37,12 @@ const AboutSection = () => {
 
                     <div className="pt-4 flex gap-8 items-center">
                         <div className="flex flex-col">
-                            <span className="text-4xl font-black text-[#3174c8]">15k+</span>
+                            <span className="text-4xl font-black text-[#3174c8]">1k+</span>
                             <span className="text-sm font-bold text-gray-500 uppercase tracking-widest">Happy Clients</span>
                         </div>
                         <div className="w-[1px] h-12 bg-gray-300"></div>
                         <div className="flex flex-col">
-                            <span className="text-4xl font-black text-[#3174c8]">200+</span>
+                            <span className="text-4xl font-black text-[#3174c8]">50+</span>
                             <span className="text-sm font-bold text-gray-500 uppercase tracking-widest">Expert Workers</span>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const AboutSection = () => {
                     <div className="mt-8 p-6 bg-white rounded-2xl border border-blue-100 shadow-[0_10px_40px_-15px_rgba(49,116,200,0.1)] flex items-center gap-5 w-fit animate-fade-up opacity-0 animation-delay-500" style={{ animationFillMode: 'forwards' }}>
                         <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-[#3174c8]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                                <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
                             </svg>
                         </div>
                         <div>

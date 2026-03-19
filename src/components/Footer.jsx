@@ -12,9 +12,9 @@ const Footer = ({ onContactClick }) => {
                     {/* Brand */}
                     <div className="space-y-4">
                         <h2 className="text-[22px] font-black tracking-tight">
-                            Home<span className="text-[#3174c8]">Services</span>
+                            Home Services
                         </h2>
-                        <p className="text-gray-400 text-[12px] font-medium leading-relaxed">
+                        <p className="text-gray-400 text-[14px] font-medium leading-relaxed">
                             Australia's leading platform for finding skilled, trusted, and professional home service experts.
                         </p>
                         <div className="flex gap-3">

@@ -1,138 +1,110 @@
-import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import React, { useEffect, useState } from "react";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
     {
         name: "John Smith",
         role: "Home Owner",
-        content: "Outstanding service! The electrician arrived on time and fixed our wiring issues quickly. Highly recommended for any home maintenance needs.",
+        content:
+            "Outstanding service! The electrician arrived on time and fixed our wiring issues quickly.",
         rating: 5,
     },
     {
         name: "Sarah Johnson",
         role: "Property Manager",
-        content: "I've used their plumbing services multiple times for my rental properties. Always professional, reliable, and reasonably priced.",
+        content:
+            "I've used their plumbing services multiple times. Always professional and reliable.",
         rating: 5,
     },
     {
         name: "Michael Brown",
         role: "Home Owner",
-        content: "The house painting job was impeccable. They were very careful with our furniture and the finish is perfect. Great attention to detail!",
+        content: "Painting job was impeccable. Great attention to detail!",
         rating: 4,
     },
     {
         name: "Emily Davis",
         role: "Interior Designer",
-        content: "Finding local experts who actually know their craft is hard. These guys are the real deal. Their carpentry work is top-notch.",
-        rating: 5
-    },
-    {
-        name: "David Wilson",
-        role: "Home Owner",
-        content: "Excellent cleaning service! They reached every corner and the house was sparkling. Very polite staff and excellent communication.",
+        content: "Their carpentry work is top-notch.",
         rating: 5,
     },
-    {
-        name: "Lisa Anderson",
-        role: "Real Estate Agent",
-        content: "I recommend them to all my clients. Whether it's a quick fix or a major renovation, they deliver quality results every single time.",
-        rating: 5,
-    },
-    {
-        name: "Robert Taylor",
-        role: "Business Owner",
-        content: "Prompt response and quick turnaround. They fixed our office plumbing issues over the weekend so we were ready for Monday. Life savers!",
-        rating: 4,
-    }
 ];
 
+const TestimonialCard = ({ item }) => (
+    <div className="w-[350px] bg-[#f8faff] p-6 rounded-2xl mx-4 shadow border flex flex-col">
+        <div className="flex items-center gap-4 mb-4">
+            <div className="w-12 h-12 rounded-full bg-[#3174c8] text-white flex items-center justify-center font-bold">
+                {item.name.charAt(0)}
+            </div>
+
+            <div>
+                <h4 className="font-bold text-[#2a3c56]">{item.name}</h4>
+                <p className="text-[#3174c8] text-sm">{item.role}</p>
+            </div>
+
+            <div className="ml-auto flex">
+                {[...Array(5)].map((_, i) => (
+                    <Star
+                        key={i}
+                        className={`w-4 h-4 ${i < item.rating
+                            ? "text-yellow-400 fill-yellow-400"
+                            : "text-gray-300"
+                            }`}
+                    />
+                ))}
+            </div>
+        </div>
+
+        <div className="relative">
+            <Quote className="w-6 h-6 text-[#3174c8]/20 absolute -top-3" />
+            <p className="text-gray-600 italic">"{item.content}"</p>
+        </div>
+    </div>
+);
+
 const FeedbackSection = () => {
+    const [play, setPlay] = useState(true);
+
+    useEffect(() => {
+        let timer;
+
+        if (play) {
+            timer = setTimeout(() => {
+                setPlay(false);
+
+                setTimeout(() => {
+                    setPlay(true);
+                }, 10000); // 10 sec pause
+            }, 20000); // animation duration
+        }
+
+        return () => clearTimeout(timer);
+    }, [play]);
+
     return (
-        <section id="feedback" className="py-12 bg-white overflow-hidden">
-            <div className="container mx-auto px-8 md:px-20 text-center mb-10">
-                <span className="text-[#3174c8] font-bold tracking-widest uppercase text-sm">Testimonials</span>
-                <h2 className="text-4xl md:text-5xl font-black text-[#2a3c56] mt-4">
+        <section className="py-16 bg-white overflow-hidden">
+            {/* Heading */}
+            <div className="text-center mb-12 px-6">
+                <span className="text-[#3174c8] font-bold tracking-widest uppercase text-sm">
+                    Testimonials
+                </span>
+
+                <h2 className="text-3xl md:text-5xl font-black text-[#2a3c56] mt-4">
                     What Our <span className="text-[#3174c8]">Clients Say</span>
                 </h2>
+
                 <p className="text-gray-500 mt-6 max-w-2xl mx-auto text-lg">
                     Real stories from real customers. We take pride in delivering excellence to every home in Australia.
                 </p>
             </div>
 
-            <div className="relative flex overflow-x-hidden group">
-
-                {/* First set */}
-                <div className="animate-marquee whitespace-nowrap py-6 flex">
-                    {testimonials.map((item, index) => (
-                        <div key={index} className="w-[380px] bg-[#f8faff] p-6 rounded-3xl mx-4 shadow-sm border border-gray-100 transition-all hover:shadow-xl hover:-translate-y-2 flex flex-col">
-
-                            <div className="flex items-center gap-4 mb-4">
-
-                                {/* Avatar */}
-                                <div className="w-14 h-14 rounded-full border-4 border-white shadow-md flex items-center justify-center bg-[#3174c8] text-white font-semibold text-lg shrink-0">
-                                    {item.name.charAt(0)}
-                                </div>
-
-                                {/* Name */}
-                                <div className="text-left">
-                                    <h4 className="font-bold text-[#2a3c56] text-lg">{item.name}</h4>
-                                    <p className="text-[#3174c8] text-sm font-semibold">{item.role}</p>
-                                </div>
-
-                                {/* Stars */}
-                                <div className="ml-auto flex">
-                                    {[...Array(5)].map((_, i) => (
-                                        <Star key={i} className={`w-4 h-4 ${i < item.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"}`} />
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Content */}
-                            <div className="relative">
-                                <Quote className="w-8 h-8 text-[#3174c8]/10 absolute -top-3 -left-1" />
-                                <p className="text-gray-600 leading-relaxed italic whitespace-normal">
-                                    "{item.content}"
-                                </p>
-                            </div>
-
-                        </div>
+            {/* Marquee */}
+            <div className="overflow-hidden">
+                <div className={`flex w-max ${play ? "animate-marquee" : ""}`}>
+                    {[...testimonials, ...testimonials].map((item, index) => (
+                        <TestimonialCard key={index} item={item} />
                     ))}
                 </div>
-
-                {/* Duplicate for smooth loop */}
-                <div className="animate-marquee whitespace-nowrap py-6 flex" aria-hidden="true">
-                    {testimonials.map((item, index) => (
-                        <div key={`dup-${index}`} className="w-[380px] bg-[#f8faff] p-6 rounded-3xl mx-4 shadow-sm border border-gray-100 flex flex-col">
-
-                            <div className="flex items-center gap-4 mb-4">
-
-                                <div className="w-14 h-14 rounded-full border-4 border-white shadow-md flex items-center justify-center bg-[#3174c8] text-white font-semibold text-lg shrink-0">
-                                    {item.name.charAt(0)}
-                                </div>
-
-                                <div className="text-left">
-                                    <h4 className="font-bold text-[#2a3c56] text-lg">{item.name}</h4>
-                                    <p className="text-[#3174c8] text-sm font-semibold">{item.role}</p>
-                                </div>
-
-                                <div className="ml-auto flex">
-                                    {[...Array(5)].map((_, i) => (
-                                        <Star key={i} className={`w-4 h-4 ${i < item.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"}`} />
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="relative">
-                                <Quote className="w-8 h-8 text-[#3174c8]/10 absolute -top-3 -left-1" />
-                                <p className="text-gray-600 leading-relaxed italic whitespace-normal">
-                                    "{item.content}"
-                                </p>
-                            </div>
-
-                        </div>
-                    ))}
-                </div>
-
             </div>
         </section>
     );

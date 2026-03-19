@@ -88,7 +88,7 @@ const Services = ({ onServiceSelect }) => {
 
                             {/* Description with Star */}
                             <div className="flex-1 text-center relative z-10 space-y-1">
-                                <div className="flex items-center justify-start gap-2 text-gray-500 text-[16px] font-semibold">
+                                <div className="flex items-center text-start  gap-2 text-gray-500 text-[14px] ">
 
                                     <span>{service.desc}</span>
                                 </div>
