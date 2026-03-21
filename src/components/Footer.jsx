@@ -88,7 +88,7 @@ const Footer = ({ onContactClick }) => {
             <div className="border-t border-white/5 bg-black/20 py-3">
                 <div className="max-w-7xl mx-auto px-8 flex justify-center items-center">
                     <p className="text-gray-500 text-[10px] uppercase tracking-widest">
-                        © 2026 <span className="text-white">HomeServices Aus</span>
+                <span className="text-white">© 2026 Ventoria Global.</span>
                     </p>
                 </div>
             </div>
