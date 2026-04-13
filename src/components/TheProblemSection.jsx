@@ -17,7 +17,7 @@ const TheProblemSection = () => {
                 {/* 1 */}
                 <div className="bg-blue-50/50 rounded-[28px] p-8 border border-blue-100 flex flex-col">
                     <span className="text-3xl font-black text-blue-200 mb-4 opacity-50">01</span>
-                    <h3 className="text-[#1a2b3c] font-bold text-lg mb-4">Your local repairman is booked out</h3>
+                    <h3 className="text-[#1a2b3c] font-bold text-lg mb-4">Your Google Maps ranking is weak</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
                         72% of homeowners choose a repairman from the first page of Google. If your trusted person is busy, you're left waiting weeks for a simple fix while the problem gets worse.
                     </p>
