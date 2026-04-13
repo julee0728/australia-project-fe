@@ -22,9 +22,9 @@ const HowItWorksSection = () => {
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             We audit your home requirements, current setup, materials needed, and the competitor landscape — all specific to your exact suburb's code.
                         </p>
-                        <div className="w-10 h-10 rounded-full bg-[#3174c8] text-white flex items-center justify-center hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2">
-                            <ArrowRight className="w-5 h-5" />
-                        </div>
+                         
+                             
+                         
                     </div>
 
                     {/* Step 2 */}
@@ -34,9 +34,7 @@ const HowItWorksSection = () => {
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             We build a 1-day plan targeting the exact fixes your home needs — not generic patches, but durable, customized solutions.
                         </p>
-                        <div className="w-10 h-10 rounded-full bg-[#3174c8] text-white flex items-center justify-center hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2">
-                            <ArrowRight className="w-5 h-5" />
-                        </div>
+                         
                     </div>
 
                     {/* Step 3 */}
@@ -46,9 +44,7 @@ const HowItWorksSection = () => {
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             We implement the solutions, optimise your living space settings, and run targeted tests with dedicated equipment. Same-day completion.
                         </p>
-                        <div className="w-10 h-10 rounded-full bg-[#3174c8] text-white flex items-center justify-center hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2">
-                            <ArrowRight className="w-5 h-5" />
-                        </div>
+                         
                     </div>
 
                     {/* Step 4 */}
