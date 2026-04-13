@@ -8,8 +8,19 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 import ServiceDetailModal from './components/ServiceDetailModal';
+import PricingSection from './components/PricingSection';
+import WhyUsSection from './components/WhyUsSection';
+import TheProblemSection from './components/TheProblemSection';
+import HowItWorksSection from './components/HowItWorksSection';
+import ResultsSection from './components/ResultsSection';
+import FAQSection from './components/FAQSection';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  React.useEffect(() => {
+    AOS.init({ duration: 800, once: false, offset: 100 });
+  }, []);
 
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
@@ -31,27 +42,57 @@ function App() {
       <Navbar onContactClick={toggleModal} />
 
       {/* Home */}
-      <div id="home">
+      <div id="home" data-aos="fade-up">
         <Hero onContactClick={toggleModal} />
       </div>
 
       {/* Services */}
-      <div id="services">
+      <div id="services" data-aos="fade-up">
         <Services onServiceSelect={handleServiceSelect} />
       </div>
 
+      {/* Pricing */}
+      <div id="pricing" data-aos="fade-up">
+        <PricingSection />
+      </div>
+
       {/* About */}
-      <div id="about">
+      <div id="about" data-aos="fade-up">
         <AboutSection />
       </div>
 
+      {/* Why Us */}
+      <div id="why-us" data-aos="fade-up">
+        <WhyUsSection />
+      </div>
+
       {/* Feedback */}
-      <div id="feedback">
+      <div id="feedback" data-aos="fade-up">
         <FeedbackSection />
       </div>
 
+      {/* The Problem */}
+      <div id="the-problem" data-aos="fade-up">
+        <TheProblemSection />
+      </div>
+
+      {/* How It Works */}
+      <div id="how-it-works" data-aos="fade-up">
+        <HowItWorksSection />
+      </div>
+
+      {/* Results */}
+      <div id="results" data-aos="fade-up">
+        <ResultsSection />
+      </div>
+
+      {/* FAQ */}
+      <div id="faq" data-aos="fade-up">
+        <FAQSection />
+      </div>
+
       {/* Contact */}
-      <div id="contact">
+      <div id="contact" data-aos="fade-up">
         <ContactSection />
       </div>
 
