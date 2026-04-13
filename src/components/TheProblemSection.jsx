@@ -26,7 +26,7 @@ const TheProblemSection = () => {
                 {/* 2 */}
                 <div className="bg-red-50/50 rounded-[28px] p-8 border border-red-100 flex flex-col">
                     <span className="text-3xl font-black text-red-200 mb-4 opacity-50">02</span>
-                    <h3 className="text-[#1a2b3c] font-bold text-lg mb-4">DIY fixes are costing you more</h3>
+                    <h3 className="text-[#1a2b3c] font-bold text-lg mb-4">Your website isn't converting visitors</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
                         Most YouTube tutorials make it look easy, but have no clear instructions for your specific home setup, and aren't optimized for safety. You try it, make a mistake, and end up hiring a pro anyway.
                     </p>
@@ -35,7 +35,7 @@ const TheProblemSection = () => {
                 {/* 3 */}
                 <div className="bg-green-50/50 rounded-[28px] p-8 border border-green-100 flex flex-col">
                     <span className="text-3xl font-black text-green-200 mb-4 opacity-50">03</span>
-                    <h3 className="text-[#1a2b3c] font-bold text-lg mb-4">You're wasting money on cheap parts</h3>
+                    <h3 className="text-[#1a2b3c] font-bold text-lg mb-4">Your ads are wasting budget</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
                         Generic hardware store trips without proper knowledge, missing tools, or cheap replacment parts burn through budget on items that will break again in six months.
                     </p>
