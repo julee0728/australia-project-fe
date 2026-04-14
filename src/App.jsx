@@ -11,6 +11,7 @@ import ServiceDetailModal from './components/ServiceDetailModal';
 import PricingSection from './components/PricingSection';
 import WhyUsSection from './components/WhyUsSection';
 import TheProblemSection from './components/TheProblemSection';
+import WhatWeDoSection from './components/WhatWeDoSection';
 import HowItWorksSection from './components/HowItWorksSection';
 import ResultsSection from './components/ResultsSection';
 import FAQSection from './components/FAQSection';
@@ -46,34 +47,19 @@ function App() {
         <Hero onContactClick={toggleModal} />
       </div>
 
-      {/* Services */}
-      <div id="services" data-aos="fade-up">
-        <Services onServiceSelect={handleServiceSelect} />
-      </div>
-
-      {/* Pricing */}
-      <div id="pricing" data-aos="fade-up">
-        <PricingSection />
-      </div>
-
-      {/* About */}
-      <div id="about" data-aos="fade-up">
-        <AboutSection />
-      </div>
-
-      {/* Why Us */}
-      <div id="why-us" data-aos="fade-up">
-        <WhyUsSection />
-      </div>
-
-      {/* Feedback */}
-      <div id="feedback" data-aos="fade-up">
-        <FeedbackSection />
-      </div>
-
       {/* The Problem */}
       <div id="the-problem" data-aos="fade-up">
         <TheProblemSection />
+      </div>
+
+      {/* What We Do */}
+      <div id="what-we-do" data-aos="fade-up">
+        <WhatWeDoSection />
+      </div>
+
+      {/* Services */}
+      <div id="services" data-aos="fade-up">
+        <Services onServiceSelect={handleServiceSelect} />
       </div>
 
       {/* How It Works */}
@@ -81,14 +67,34 @@ function App() {
         <HowItWorksSection />
       </div>
 
-      {/* Results */}
-      <div id="results" data-aos="fade-up">
-        <ResultsSection />
+      {/* Why Us */}
+      <div id="why-us" data-aos="fade-up">
+        <WhyUsSection />
+      </div>
+
+      {/* About */}
+      <div id="about" data-aos="fade-up">
+        <AboutSection />
+      </div>
+
+      {/* Pricing */}
+      <div id="pricing" data-aos="fade-up">
+        <PricingSection />
+      </div>
+
+      {/* Feedback */}
+      <div id="feedback" data-aos="fade-up">
+        <FeedbackSection />
       </div>
 
       {/* FAQ */}
       <div id="faq" data-aos="fade-up">
         <FAQSection />
+      </div>
+
+      {/* Results */}
+      <div id="results" data-aos="fade-up">
+        <ResultsSection />
       </div>
 
       {/* Contact */}

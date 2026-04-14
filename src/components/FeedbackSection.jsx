@@ -89,7 +89,7 @@ const FeedbackSection = () => {
                     Testimonials
                 </span>
 
-                <h2 className="text-3xl md:text-5xl font-black text-[#2a3c56] mt-4">
+                <h2 className="text-1xl md:text-2xl font-black text-[#2a3c56] mt-4">
                     What Our <span className="text-[#3174c8]">Clients Say</span>
                 </h2>
 

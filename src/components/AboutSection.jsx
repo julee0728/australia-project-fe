@@ -10,7 +10,7 @@ const AboutSection = () => {
                     <div className="inline-block px-4 py-1.5 bg-blue-100 text-[#3174c8] rounded-full text-[13px] font-bold uppercase tracking-widest mb-2">
                         Professional & Trusted
                     </div>
-                    <h2 className="text-[40px] lg:text-[50px] font-extrabold text-[#2e425a] leading-[1.1] tracking-tight">
+                    <h2 className="text-[20px] lg:text-[30px] font-extrabold text-[#2e425a] leading-[1.1] tracking-tight">
                         We Are Australia's Most Trusted <span className="text-[#3174c8]">Home Service</span> Experts
                     </h2>
                     <p className="text-[19px] text-[#55677d] leading-relaxed font-medium">

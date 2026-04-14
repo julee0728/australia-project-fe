@@ -2,28 +2,28 @@ import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const FAQSection = () => {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [openIndex, setOpenIndex] = useState(null);
 
     const faqs = [
         {
-            question: "How much does a routine audit cost?",
-            answer: "Our initial routine audit is completely free. We visit your property, assess the required work, and provide a transparent, upfront quote with no hidden fees before any work begins."
+            question: "How much does an initial consultation cost?",
+            answer: "Our initial evaluation is completely complimentary. We review your requirements, assess the scope of the project, and provide a transparent, upfront retainer quote with no hidden fees before any commitment is made."
         },
         {
-            question: "Do you offer warranties on your work?",
-            answer: "Yes! All our premium and complete packages come with a workmanship guarantee. We also honor all manufacturer warranties on the parts and materials we install."
+            question: "Do you offer warranties on your workmanship?",
+            answer: "Absolutely. All our premium service tiers include a comprehensive workmanship guarantee. We uphold the highest standards of execution and honor all supplier warranties on premium materials."
         },
         {
             question: "Are your technicians fully licensed and insured?",
-            answer: "Absolutely. Every professional on our team is fully vetted, licensed in their specific trade, and carries comprehensive insurance to protect your property and peace of mind during the project."
+            answer: "Without exception. Every professional partner in our network is rigorously vetted, fully licensed in their respective jurisdiction, and carries comprehensive liability insurance to protect your property."
         },
         {
-            question: "How long does a typical renovation project take?",
-            answer: "It depends on the scope of the project. Small repairs can be done in a single day, while larger renovations may take a few weeks. Your dedicated project manager will provide a detailed timeline during the estimation phase."
+            question: "What is the timeline for complex renovations?",
+            answer: "Timelines reflect the scale of the project. Routine implementations are executed promptly, while complex structural changes require thorough scheduling. A dedicated project manager will provide an exact timeline during consultation."
         },
         {
-            question: "Do I have to sign a long-term contract for maintenance?",
-            answer: "No long-term lock-ins required! Our services are strictly on-demand or month-to-month, meaning you only pay for the work you need, when you need it."
+            question: "Am I locked into a long-term service contract?",
+            answer: "We do not mandate long-term lock-ins. Our premium services are structured on-demand or month-to-month, ensuring you retain full control over your ongoing retainers and property management."
         }
     ];
 
@@ -32,27 +32,26 @@ const FAQSection = () => {
     };
 
     return (
-        <section id="faq" className="w-full max-w-4xl mx-auto px-8 py-20 bg-[#f8faff]">
-            <div className="text-center mb-12">
-                <p className="text-[#3174c8] font-bold tracking-widest uppercase mb-2">FAQ</p>
-                <h2 className="text-1xl md:text-2xl font-medium text-[#1a2b3c] mb-4 tracking-tighter">
+        <section id="faq" className="w-full max-w-4xl mx-auto px-8 py-24 bg-[#f8faff]">
+            <div className="text-center mb-16">
+                <p className="text-[#c5a059] font-bold tracking-widest uppercase mb-4 text-sm">FAQ</p>
+                <h2 className="text-1xl md:text-2xl font-extrabold text-[#0f172a] mb-6 tracking-tight font-serif">
                     Frequently Asked Questions
                 </h2>
-                <div className="w-24 h-2 bg-[#3174c8] mx-auto mt-6 rounded-full"></div>
             </div>
 
             <div className="space-y-4">
                 {faqs.map((faq, index) => (
                     <div 
                         key={index} 
-                        className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                        className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                         onClick={() => toggleFaq(index)}
                     >
                         <div className="p-6 flex justify-between items-center gap-4">
-                            <h3 className={`font-bold text-lg transition-colors ${openIndex === index ? 'text-[#3174c8]' : 'text-[#1a2b3c]'}`}>
+                            <h3 className={`font-bold text-lg transition-colors font-serif ${openIndex === index ? 'text-[#c5a059]' : 'text-[#0f172a]'}`}>
                                 {faq.question}
                             </h3>
-                            <div className={`text-gray-400 transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-[#3174c8]' : ''}`}>
+                            <div className={`text-slate-400 transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-[#c5a059]' : ''}`}>
                                 <ChevronDown className="w-6 h-6" />
                             </div>
                         </div>
@@ -60,7 +59,7 @@ const FAQSection = () => {
                         <div 
                             className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-48 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
                         >
-                            <p className="text-gray-600 leading-relaxed">
+                            <p className="text-slate-600 leading-relaxed text-sm">
                                 {faq.answer}
                             </p>
                         </div>
